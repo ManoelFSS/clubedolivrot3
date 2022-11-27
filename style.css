@@ -1,20 +1,121 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 main{
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 .title{
-    background-color: #1E1E1E;
-    width: 50%;
-    height: 100vh;
+    flex: 1;
+    min-width: 320px;
+    background-color: #000;
 }
-.form{
-    background-color: #EFD0A9;
-    width: 50%;
-    height: 100vh;
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    height: 50vh;
+    border:  rgb(224, 214, 214) px solid;
+    color: rgb(212, 212, 212);
+}
+.textArea{
+    max-width: 500px;
+    min-width: 300px;
+    padding-left: 8px;
+    border:  rgb(224, 214, 214) px solid;
+}
+.text h1{
+    font-family: 'Fenix';
+    font-weight: 400;
+    font-size: clamp( 1em, 2em + 1vw, 2em);
+}
+.text p{
+    font-family: 'Fenix';
+    font-style: normal;
+    font-weight: 450;
+    font-size: clamp( 1em, 1.6em + 1vw, 2.2em);
+    margin-left: 0px;
+}
+.logo {
+  flex: 1;
+  height: 50vh;
+  border:  rgb(224, 214, 214) px solid;
+}
+.logo img{
+    width: 100%;
+}
+.form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 320px;;
+    background-color:  #EFD0A9;
+}
+.form form {
+    padding: 15px;
+}
+.form h2 {     
+    font-family: 'Fenix';
+    font-weight: 400;
+    font-size: 36px;
+    padding: 15px;
+}
+.form label {
+    display: block;
+    font-family: 'Fenix';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 0px 5px 0px;
+}
+.form input {
+    display: block;
+    height: 40px;
+    width: 300px;
+    padding: 3px;
+}
+.data input {
+    width: 110px;
+    padding: 3px;
+}
+.senha input {
+    width: 110px;
+    padding: 3px;
+}
+.termos {
+    display: flex;
+    padding: 10px 0px 10px 0px;
+}
+.termos label{
+   font-size: 14px;
+}
+.termos a {
+    color: #000;
+}
+.termos input {
+    width: 16px;
+}
+#botao {
+    background-color: #9B9B7A;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+}
+@media (max-width:639px){
+   .text{
+    height: 30vh;
+   }
+   .textArea{
+    padding-left: 15px;
+   }
+   .logo{
+    height: 15vh;
 
+   }
 }
+

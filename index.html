@@ -8,42 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+   <main>
         <section class="title">
-            <h1>CLUBE DO LIVRO</h1>
-            <p>a sociedade secreta das folhas amarelas</p>
-            <img src="./assets/paper.png" alt="">
+            <section class="text">
+                <section class="textArea">
+                    <h1>CLUBE DO LIVRO</h1>
+                    <p>A Sociedade Secreta Das Folhas Amarelas</p>
+                </section>
+            </section>
+            <div class="logo">
+               <img src="./assets/page.png" alt="">
+            </div>
         </section>
         <section class="form">
             <h2>Crie sua conta</h2>
-            <form action="" >
+            <form action="">
                 <label for="nome">Nome Completo</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
-
+                <input type="text" id="nome" name="nome" placeholder="Digite seu Nome Conpleto" required>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email"  placeholder="email@email.com">
-
-                <label for="data">Data de Nascimento</label>
-                <select name="" id="">
-                    <option value="">11</option>
-                    <option value="">12</option>
-                    <option value="">13</option>
-                </select>
-                <select name="" id="">
-                    <option value="">05</option>
-                </select>
-                <select name="" id="">
-                    <option value="">1996</option>
-                </select>
-                <label for="psw">Senha</label>
-                <input type="password" name="psw" id="psw">
-                 
-                <input id="termos" type="checkbox" required>
-                <label for="termos"><a href="#">Aceitar os termos e condições</a></label>
-
-                <input type="submit" value="Criar conta">
+                <input type="email" id="email" name="email" placeholder="Exmplo@email.com" required>
+                <div class="data">
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" id="data" name="data" min="1960-01-01" max="3000-12-30" required>
+                </div>
+                <div class="senha">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                </div>
+                <div class="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos"><a href="#">Aceitar os termos e condições </a></label>
+                </div>
+                <input type="submit" value="Criar conta" id="botao">
             </form>
         </section>
-    </main>
+   </main>
 </body>
 </html>
